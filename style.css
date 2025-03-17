@@ -1,0 +1,134 @@
+/* Define colors for the website */
+:root {
+    --primary-color: #2C3E50;  /* Dark blue (used for header and footer) */
+    --secondary-color: #E74C3C; /* Red (used for buttons and highlights) */
+    --background-color: #ECF0F1; /* Light gray (background color for the page) */
+    --text-color: #2C3E50; /* Dark blue (used for text) */
+    --white: #FFFFFF; /* White color */
+}
+
+/* Style for the whole page */
+body {
+    font-family: Arial, sans-serif; /* Set font style */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: var(--background-color); /* Set background color */
+    color: var(--text-color); /* Set text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+}
+
+/* Dark Mode - Change background and text color when dark mode is enabled */
+body.dark-mode {
+    background-color: #1E1E1E !important; /* Dark background */
+    color: #FFFFFF !important; /* White text */
+}
+
+/* Style for the top section (header) */
+header {
+    background: var(--primary-color); /* Dark blue background */
+    color: var(--white); /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Profile Image */
+header img {
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    border-radius: 50%; /* Make it round */
+    margin-top: 10px; /* Add space above the image */
+    object-fit: cover; /* Crop image to fit */
+    border: 4px solid var(--white); /* White border */
+}
+
+/* Navigation menu (links) */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    text-align: center; /* Center align links */
+}
+
+/* Navigation items */
+nav ul li {
+    display: inline-block; /* Show items in a row */
+    margin: 10px;
+}
+
+/* Navigation links */
+nav ul li a {
+    color: var(--white); /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+}
+
+/* Section styling (About, Projects, Skills, Contact) */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for each project box */
+.project {
+    background: var(--white); /* White background */
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 600px; /* Set maximum width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    border-left: 5px solid var(--secondary-color); /* Red border on left side */
+}
+
+/* Style for skill list */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+/* Style for each skill item */
+ul li {
+    background: var(--white); /* White background */
+    margin: 10px;
+    padding: 10px;
+    display: inline-block; /* Show in a row */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Footer (bottom section) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--primary-color); /* Dark blue background */
+    color: var(--white); /* White text */
+    width: 100%;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    background: var(--secondary-color); /* Red background */
+    color: var(--white); /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Show menu items in a column */
+        margin: 5px 0;
+    }
+
+    .project {
+        width: 95%; /* Make project box take more space */
+    }
+
+    ul li {
+        display: block; /* Show skills in a column */
+        width: 80%;
+        margin: 10px auto;
+    }
+}
