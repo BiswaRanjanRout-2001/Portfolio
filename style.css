@@ -1,35 +1,47 @@
 body {
-    background-color: #03045e;
+    background: linear-gradient(135deg, #000000, #102157, #198fff);
 }
 
 h1{
     color: white;
+    text-align: center;
 }
 
 header{
-    background-color: #0077b6;
+    background: linear-gradient(135deg, #000000, #102157, #198fff);
+    text-align: center;
 }
 
 section {
-    background-color: #90e0ef;
-}
-
-h2 {
-    background-color: #00b4d8;
+    background: linear-gradient(135deg, #000000, #102157, #198fff);
     color: white;
 }
 
-img{
-    border-radius: 50%;
+h2 {
+    background: linear-gradient(135deg, #000000, #102157, #198fff);
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: #03045e;
+    color: white;
     font-weight: bold;
 }
 button {
-    background-color: #caf0f8;
+    background: linear-gradient(135deg, #000000, #102157, #198fff);
 }
 
+.description {
+    text-align: center;
+}
 
+img {
+    border-radius: 50%;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+}
