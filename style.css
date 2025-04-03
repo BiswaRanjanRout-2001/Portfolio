@@ -1,10 +1,8 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
 body {
     background: linear-gradient(135deg, #000000, #102157, #198fff);
-}
-
-h1{
-    color: white;
-    text-align: center;
 }
 
 header{
@@ -12,9 +10,9 @@ header{
     text-align: center;
 }
 
-section {
-    background: linear-gradient(135deg, #000000, #102157, #198fff);
+h1{
     color: white;
+    text-align: center;
 }
 
 h2 {
@@ -22,11 +20,19 @@ h2 {
     color: white;
 }
 
-a {
+
+section {
+    background: linear-gradient(135deg, #000000, #102157, #198fff);
+    color: white;
+}
+
+
+.project a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
 button {
     background: linear-gradient(135deg, #000000, #102157, #198fff);
 }
@@ -39,9 +45,42 @@ img {
     border-radius: 50%;
 }
 
-.social-icons {
+ .social-icons {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 18px;
     padding: 0;
+    margin-bottom: 0px;
+    font-size: 25px;
+    color: #fff;
 }
+
+.social-icons a {
+    color: #fff;
+}
+
+
+ .social-nav {
+    display: flex;
+    justify-content: center;
+ }
+
+ .copyright {
+    display: flex;
+    justify-content: center;
+ }
+
+ .tagline {
+    font-size: 18px;
+    color: #fff;
+ }
+
+ #tagline {
+    text-decoration: wavy underline;
+ }
+
+ 
+ .footer {
+    display: flex;
+    justify-content: center;
+ }
