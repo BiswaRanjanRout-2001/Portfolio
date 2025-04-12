@@ -13,11 +13,20 @@ header{
 h1{
     color: white;
     text-align: center;
+    transition: all 2s ease-in-out 0.2s;
+}
+
+h1:hover{
+    background-color: yellow;
+    color: black;
 }
 
 h2 {
     background: linear-gradient(135deg, #000000, #102157, #198fff);
     color: white;
+    transition: all 2s ease-in-out 0.2s;
+    text-align: center;
+ 
 }
 
 
@@ -25,6 +34,8 @@ section {
     background: linear-gradient(135deg, #000000, #102157, #198fff);
     color: white;
 }
+
+
 
 
 .project a {
@@ -41,7 +52,17 @@ button {
     text-align: center;
 }
 
-img {
+
+div img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+.logo-img{
+    height: 29px;
+    width: 29px;
     border-radius: 50%;
 }
 
@@ -105,4 +126,23 @@ img {
 #discord:hover{
     background-color: rgb(81, 66, 212);
     color: white;
+}
+
+h2:hover{
+    color: black;
+    background: yellow;
+}
+
+
+header img:hover {
+    animation: rotateImage 3s linear infinite;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
